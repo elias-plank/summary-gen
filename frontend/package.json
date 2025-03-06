@@ -38,6 +38,7 @@
 		"buffer": "^6.0.3",
 		"mode-watcher": "^0.5.1",
 		"svelte-radix": "^2.0.1",
+		"svelte-sonner": "^0.3.28",
 		"ws": "^8.18.1"
 	}
 }

@@ -1,6 +1,5 @@
 <script lang="ts">
     import { Copy } from "lucide-svelte";
-    import { Popover } from "@skeletonlabs/skeleton-svelte";
 
     type Props = {
         size: number;
@@ -18,21 +17,3 @@
         }, 3000);
     }
 </script>
-
-{#if !disabled}
-    <Popover
-        {open}
-        onOpenChange={(e) => (open = e.open)}
-        onclick={handleCopy}
-        positioning={{ placement: "top" }}
-        triggerBase="btn"
-        contentBase="card bg-surface-100-900 p-2"
-    >
-        {#snippet trigger()}
-            <Copy {size} />
-        {/snippet}
-        {#snippet content()}
-            Copied!
-        {/snippet}
-    </Popover>
-{/if}
